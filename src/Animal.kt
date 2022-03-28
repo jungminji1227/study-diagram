@@ -39,9 +39,17 @@ class Cat(name: String, sex: String, age: Int, weight: Int, color: String) : Ani
 }
 
 class Dog(name: String, sex: String, age: Int, weight: Int, color: String) : Animal(name, sex, age, weight, color) {
-    var beatFriend : String = "Human"
+    // var beatFriend : Human
 
     fun bark() {
         println("강아지가 짖는다.")
+    }
+}
+
+class Human{
+    var name : String
+
+    constructor(name: String) {
+        this.name = name
     }
 }
