@@ -33,17 +33,24 @@ open class Animal {
 class Cat(name: String, sex: String, age: Int, weight: Int, color: String) : Animal(name, sex, age, weight, color) {
 
     fun meow() {
-        println("고양이가 웁니다.")
+        println("야옹")
     }
 }
 
 class Dog(name: String, sex: String, age: Int, weight: Int, color: String) : Animal(name, sex, age, weight, color) {
 
     fun bark() {
-        println("강아지가 짖는다.")
+        println("왈왈")
     }
 }
 
 fun main(){
-    
+    val dog = Dog("coco", "F", 3, 5, "black")
+    val cat = Cat("haha", "F", 5, 10, "white")
+
+    print(dog.name + "가 짖어요 ")
+    dog.bark()
+
+    print(cat.name + "가 울어요 ")
+    cat.meow()
 }
