@@ -1,9 +1,9 @@
 open class Animal {
-    var name : String
-    var sex : String
-    var age : Int
-    var weight : Int
-    var color : String
+    val name : String
+    val sex : String
+    val age : Int
+    val weight : Int
+    val color : String
 
     constructor(name: String, sex : String, age: Int, weight : Int, color : String) {
         this.name = name
@@ -31,7 +31,6 @@ open class Animal {
 }
 
 class Cat(name: String, sex: String, age: Int, weight: Int, color: String) : Animal(name, sex, age, weight, color) {
-    var isNasty : Boolean = false
 
     fun meow() {
         println("고양이가 웁니다.")
@@ -39,17 +38,12 @@ class Cat(name: String, sex: String, age: Int, weight: Int, color: String) : Ani
 }
 
 class Dog(name: String, sex: String, age: Int, weight: Int, color: String) : Animal(name, sex, age, weight, color) {
-    // var beatFriend : Human
 
     fun bark() {
         println("강아지가 짖는다.")
     }
 }
 
-class Human{
-    var name : String
-
-    constructor(name: String) {
-        this.name = name
-    }
+fun main(){
+    
 }
